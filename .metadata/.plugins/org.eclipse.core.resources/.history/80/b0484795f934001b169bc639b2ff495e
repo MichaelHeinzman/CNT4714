@@ -1,0 +1,49 @@
+<web-app>
+
+  <!-- General description of your Web application -->
+  <display-name>
+      Project 4
+  </display-name>
+
+  <description>
+    use JSP and Servlet Technology to run SQL commands from a browser.
+  </description>
+
+  <!-- Servlet definitions -->
+  <servlet>
+    <servlet-name>SQLQueryServlet</servlet-name>
+    
+    <description>
+         Servlet the handles sql commands
+    </description>
+    
+    <servlet-class>SQLQueryServlet</servlet-class>
+    
+    <init-param>
+     <param-name>databaseDriver</param-name>
+     <param-value>com.mysql.jdbc.Driver</param-value>
+    </init-param>
+    
+    <init-param>
+     <param-name>databaseName</param-name>
+     <param-value>jdbc:mysql://localhost:3306/Project4</param-value>
+    </init-param>
+    
+    <init-param>
+      <param-name>username</param-name>
+      <param-value>root</param-value>
+    </init-param>
+    
+    <init-param>
+      <param-name>password</param-name>
+      <param-value>root</param-value>
+    </init-param>
+  </servlet>
+
+  <!-- Servlet mappings -->
+  <servlet-mapping>
+    <servlet-name>SQLQueryServlet</servlet-name>
+    <url-pattern>/SQLQueryServlet</url-pattern>
+  </servlet-mapping>
+
+</web-app>

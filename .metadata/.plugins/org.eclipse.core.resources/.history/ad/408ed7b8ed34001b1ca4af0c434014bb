@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	<!--  General description of your Web application  -->
+	<display-name>
+		CNT 4714 Fall 2015 Project 4
+	</display-name>
+	<description>
+		Remote Database Management System
+	</description>
+	<!--  Servlet definitions  -->
+	<servlet>
+		<servlet-name>logic</servlet-name>
+		<description>
+			A simple servlet that handles an HTTP get request.
+		</description>
+		<servlet-class>
+			Logic
+		</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>logic</servlet-name>
+		<url-pattern>/logic</url-pattern>
+	</servlet-mapping>
+	<session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>logic</welcome-file>
+    </welcome-file-list>
+</web-app>

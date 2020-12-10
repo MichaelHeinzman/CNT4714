@@ -1,0 +1,25 @@
+<web-app>
+   <!-- General description of your Web application -->
+   <display-name>
+      CNT 4714 Fall 2020 Servlet First Example
+   </display-name>
+   <description>
+      This is the Web application in which we 
+      will demonstrate our first servlet example.
+   </description>
+<!-- Servlet definitions -->
+   <servlet>
+      <servlet-name>welcome1</servlet-name>
+      <description>
+         A simple servlet that handles an HTTP get request.
+      </description>
+      <servlet-class>
+         WelcomeServlet
+      </servlet-class>
+   </servlet>
+   <servlet-mapping>
+      <servlet-name>welcome1</servlet-name>
+      <url-pattern>/welcome1</url-pattern>
+   </servlet-mapping>
+</web-app>
+
